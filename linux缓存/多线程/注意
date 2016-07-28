@@ -1,0 +1,3 @@
+线程的makefile中,在链接的时候要加上  -lpthread库, 如下:
+start:$(OBJS)
+	$(CC) -o $(EXEC) $(OBJS) -lpthread
